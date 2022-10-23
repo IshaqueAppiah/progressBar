@@ -1,6 +1,7 @@
 const progress = document.querySelector('.progress-done')
 const input = document.querySelector('.input')
 const maxInput  = document.querySelector('.maxInput')
+const progressT = document.querySelector('.progress-text')
 
 let finalValue =0;
 let max =0
@@ -8,7 +9,8 @@ let max =0
 
 function changeWidth(){
   progress.style.width=`${(finalValue / max)* 100}%`;
-  progress.innerText = `${Math.ceil((finalValue / max)* 100)}%`;
+  progressT.innerText = `${Math.ceil((finalValue / max)* 100)}%`;
+
  
 }
 
